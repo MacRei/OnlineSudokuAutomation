@@ -7,23 +7,21 @@ def GetPuzzle():
     soup = BeautifulSoup(r.text, "html.parser")
     soup.prettify()
 
-    data = soup.find("div", {"class": "grid"}).text #Retrieves Puzzle
-    data = data[2:] #Removes first two elements of puzzle because they are just \n
-    data = data.replace("\xa0", "") #Removes \xa0 from puzzle because I don't know why they are there, I think its a break sequence, do research.
+    data = soup.find("div", {"class": "grid"}).text
+    data = data[2:] #Removes first two elements of puzzle because they are just "\n" new line elements.
+    data = data.replace("\xa0", "") #Removes "\xa0" elements from puzzle.
 
-    #Following loop removes the new line element after every character
     dataCheck = data[0]
     dataCount = 0
-    while dataCheck != "S":
+    while dataCheck != "S": #Loop removes the new line element after every character.
         if data[dataCount] != "\n":
-            data = data[:dataCount + 1] + data[dataCount + 2:] #Removing characters using translation
+            data = data[:dataCount + 1] + data[dataCount + 2:]
         dataCount += 1
         dataCheck = data[dataCount]
 
-    #Turns puzzle into a nested loop that can be altered
     sudokuPuzzle = []
     puzzleRow = []
-    for i in range(9):
+    for i in range(9): #Loop turns puzzle into a nested list so that it can be easily altered and inspected.
         for ii in range(9):
             if data[ii] != "\n":
                 puzzleRow.append(data[ii])
