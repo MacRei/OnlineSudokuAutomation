@@ -1,4 +1,4 @@
-# SudokuProject
+# OnlineSudokuAutomation
 
 # About The Project
 Program Demonstration:
