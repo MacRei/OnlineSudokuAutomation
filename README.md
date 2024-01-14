@@ -1,6 +1,6 @@
 # Online Sudoku Automation
 
-# About The Project
+# About the Project
 Program Demonstration:
 https://youtu.be/J4sAI-ql00A
 
