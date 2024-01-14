@@ -4,7 +4,7 @@
 Program Demonstration:
 https://youtu.be/J4sAI-ql00A
 
-This project is 3 python files that work together to scrape a random sudoku puzzle from the website, "https://www.menneske.no/sudoku/eng/," solve the puzzle, and then take control of the mouse and keyboard to then go to the website to solve the puzzle. 
+This project is three python files that work together to scrape a random sudoku puzzle from the website, "https://www.menneske.no/sudoku/eng/," solve the puzzle, and then take control of the mouse and keyboard to then go to the website to solve the puzzle. 
 
 One of the reasons I made this project was to learn how to use beautiful soup and requests to retrieve data from the web for different projects. I wanted to make a sudoku solving algorithm because it seemed like a challenge that required lots of skill and a deep understanding of computer science concepts like implementation of loops and indexing and managing of lists. I was also wanted to learn how to automate with python using pyautogui, even though automating a computer to solve a sudoku puzzle isn't particularly helpful, creating these projects has made me into a much stronger programmer and learning these concepts and libraries will be useful in future projects.
 
